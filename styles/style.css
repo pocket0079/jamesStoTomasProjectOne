@@ -292,6 +292,9 @@ h3 {
   text-transform: uppercase;
 }
 
+.recipe {
+  list-style: none;
+}
 .recipe p {
   font-size: 14px;
   font-size: 0.7rem;

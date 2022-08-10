@@ -54,6 +54,7 @@ h3{
 }
 
 .recipe{
+    list-style: none;
     p {
         @include fontSize(14);
         color: $secondary;
@@ -96,7 +97,7 @@ footer {
         ul{
             list-style: none;
             padding: 0;
-            
+
             li>a{
                 text-decoration: none;
                 color: $secondary;
