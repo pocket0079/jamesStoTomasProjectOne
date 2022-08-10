@@ -234,3 +234,13 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+html {
+  font-size: 125%;
+}
+
+body {
+  font-family: "Lora", serif;
+  font-size: 1rem;
+  color: #2E2E2E;
+}
