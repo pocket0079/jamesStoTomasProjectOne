@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/478c858f1a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Raleway:wght@700&display=swap"
-        rel="stylesheet">
+    rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Delicious - Project 1</title>
 </head>
 <body>
@@ -51,7 +51,7 @@
                 <h2>Most Popular Recipes</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nemo suscipit voluptas quis adipisci architecto? Blanditiis hic tenetur similique sed inventore animi amet quidem temporibus non officia laborum, laudantium recusandae?</p>
 
-                <a href="" class="viewRecipes"></a>
+                <a href="" class="viewRecipes">View Recipes</a>
             </div>
 
             <div class="lettuceBowlContainer">
@@ -165,7 +165,7 @@
             <div class="wrapper">
                 <div class="footerFlexContainer">
                     <div class="contactInfo">
-                        <a href="#"><h4>Delicious</h4></a>
+                        <a href="#" class="footerHeader"><h4 >Delicious</h4></a>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus exercitationem hic, nisi dolorem cum alias dignissimos quos ipsa!</p>
                         <p>A delicious restaurant <br>Toronto, Ontario</p>
                         <a href="mailto:yum@food.com">yum@food.com</a>
@@ -175,12 +175,29 @@
                     <div class="recentPostContainer">
                         <h3>Recent Posts</h3>
                         <ul>
-                            <li>Beetroot water spinach okra water</li>
-                            <li>Chesnut ricebean pea catsear courgette</li>
-                            <li>Summer p[urslane spinach arugula pea</li>
-                            <li>Tatsoi aubergine spring onion bush</li>
-                            <li>Tomato kale radicchio turnip chicory</li>
-                            <li>Salsify pea sprouts fava bean</li>
+                            <li>
+                                <a href="#">Beetroot water spinach okra water</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Chesnut ricebean pea catsear courgette</a>
+                            </li>
+                            
+                            <li>
+                                <a href="#">Summer purslane spinach arugula pea</a>
+                            </li>
+                            
+                            <li>
+                                <a href="#">Tatsoi aubergine spring onion bush</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Tomato kale radicchio turnip chicory</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Salsify pea sprouts fava bean</a>
+                            </li>
                         </ul>
                     </div><!--end recent posts-->
 
@@ -190,7 +207,7 @@
                         <label for="email" class="sr-only">Enter your email</label>
 
                         <div class="emailContainer">
-                            <input type="email" id="email" placeholder="Enter you email">
+                            <input type="email" id="email" placeholder="Enter your email">
                             <i class="fa-solid fa-right-long"></i>
                         </div>
 

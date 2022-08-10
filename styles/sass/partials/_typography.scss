@@ -7,3 +7,109 @@ body {
     font-size: $baseFontSize;
     color: $primary;
 }
+
+h1,
+.mainMenu,
+h2,
+h3,
+h4 {
+    font-family: $headerFont;
+    margin: 0;
+}
+
+h1,
+h4 {
+    @include fontSize(46);
+    text-transform: uppercase;
+}
+
+.mainMenu{
+    @include fontSize(14);
+    text-transform: uppercase;
+    list-style-type: none;
+    a{
+        text-decoration: none;
+    }
+}
+
+h2 {
+    @include fontSize(18);
+    text-transform: uppercase;
+}
+
+h3{
+    @include fontSize(18)
+}
+
+.mostPopular {
+    p {
+        @include fontSize(14);
+        color: $secondary;
+    }
+
+    a {
+        font-family: $headerFont;
+        text-transform: uppercase;
+    }
+}
+
+.recipe{
+    p {
+        @include fontSize(14);
+        color: $secondary;
+    }
+}
+
+.restaurantSection{
+    p {
+        @include fontSize(14);
+        color: $secondary;
+    }
+}
+
+.carousel {
+    p {
+        @include fontSize(24);
+        color: $primary;
+        font-style: italic;
+    }
+}
+
+footer {
+    @include fontSize(13);
+
+    .contactInfo {
+        a {
+            text-decoration: none;
+            color: $secondary;
+        }
+
+        .footerHeader {
+            @include fontSize(18);
+            color: $accent;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+    }
+
+    .recentPostContainer{
+        ul{
+            list-style: none;
+            padding: 0;
+            
+            li>a{
+                text-decoration: none;
+                color: $secondary;
+                list-style: none;
+            }
+        }
+    }
+
+    .recentPostContainer,
+    .subscribeNowContainer{
+        h3{
+            color: $white;
+            text-transform: uppercase;
+        }
+    }
+}
