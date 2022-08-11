@@ -1,0 +1,68 @@
+.navBar,
+.mainMenu,
+.navIcons {
+    display: flex;
+    flex-direction: row;
+}
+
+.navBar {
+    justify-content: space-between;
+    padding-top: 30px;
+
+    h1 {
+        padding-left: 30px;
+    }
+}
+
+.mainMenu {
+
+    li {
+        padding-right: 30px;
+
+        a{
+            color: $primary;
+
+            &:hover,
+            &:focus {
+                        color: $accent;
+                        transition: 0.3s;
+                        }
+        }
+    }
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.bagCounter {
+    position: relative;
+}
+
+.bag {
+    padding-right: 30px;
+}
+
+.counter {
+    position: absolute;
+    right: 17px;
+    top: 12px;
+}
+
+.counter{
+    background-color: $accent;
+    color: $white;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p{
+        font-size: 0.5rem;
+        padding-bottom: 2px;
+    }
+}

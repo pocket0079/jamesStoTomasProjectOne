@@ -24,7 +24,7 @@ h4 {
 }
 
 .mainMenu{
-    @include fontSize(14);
+    @include fontSize(18);
     text-transform: uppercase;
     list-style-type: none;
     a{

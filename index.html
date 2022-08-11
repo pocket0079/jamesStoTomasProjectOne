@@ -16,7 +16,7 @@
     <a href="#mainContent" class="skipLink">Skip to the main content.</a>
 
 <header>
-    <nav class="navBar">
+    <section class="navBar">
         <h1>Delicious</h1>
         <nav>
             <ul class="mainMenu">
@@ -27,27 +27,35 @@
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Shop</a></li>
                 <li><a href="#">Contact</a></li>
-            </ul>
-            <div class="bag">
-                <i class="fa-solid fa-bag-shopping"></i>
-            </div>
+                <li>
+                    <div class="navIcons">
+                        <div class="bagCounter">
+                            <button class="bag">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+    
+                            <div class="counter">
+                                    <p class="smallCopy">2</p>
+                            </div>
 
-            <div class="counter">
-                <p class="smallCopy">0</p>
-            </div>
-            
-            <div class="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
+                        </div>
+                
+                        <button class="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </li>
+
+            </ul>
         </nav>
-    </nav>
+    </section>
 </header>
 
     <main id="mainContent">
 
         <!-- start of recipe section -->
         <section class="recipes" id="recipes">
-            <div class="mostPopular">
+            <div class="mostPopular wrapper">
                 <h2>Most Popular Recipes</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nemo suscipit voluptas quis adipisci architecto? Blanditiis hic tenetur similique sed inventore animi amet quidem temporibus non officia laborum, laudantium recusandae?</p>
 
@@ -62,7 +70,7 @@
                 <img src="./assets/home-3.jpeg" alt="A taco stuffed with steak and pepper on top, with a slice of lime on the side">
             </div>
 
-            <div class="recipieCategories">
+            <div class="recipieCategories wrapper">
                 <ul>
                     <li class="recipe">
                         <div class="recipeIcon">
@@ -117,15 +125,17 @@
         <!-- end of recipe section -->
 
         <!-- start of our restaurants section -->
-        <section class="restaurantSection wrapper">
-            <div class="restaurantImg">
-                <img src="./assets/home-4.jpeg" alt="An outdoor dining area with empty tables and chairs">
+        <section class="restaurantSection">
+            <div class="wrapper">
+                <div class="restaurantImg">
+                    <img src="./assets/home-4.jpeg" alt="An outdoor dining area with empty tables and chairs">
+                </div>
+                <div class="circleTextImg">
+                    <img src="./assets/home-circle-text.png" alt="A circle of text saying Yummm a fancy food place, with the word food in the middle">
+                </div>
+                <h2>Our Restaurants</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae repellendus, aut dicta veritatis cum provident in eveniet sint obcaecati amet magnam maiores corrupti, vero reprehenderit deserunt consequatur, et ad. Incidunt.</p>
             </div>
-            <div class="circleTextImg">
-                <img src="./assets/home-circle-text.png" alt="A circle of text saying Yummm a fancy food place, with the word food in the middle">
-            </div>
-            <h2>Our Restaurants</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae repellendus, aut dicta veritatis cum provident in eveniet sint obcaecati amet magnam maiores corrupti, vero reprehenderit deserunt consequatur, et ad. Incidunt.</p>
         </section>
         <!-- end of restaurant section -->
 
