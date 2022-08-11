@@ -31,3 +31,13 @@ img {
     right: 0;
     text-align: center;
 }
+
+.viewRecipes {
+    display: inline;
+    color: $white;
+    background-color: $accent;
+    text-decoration: none;
+    padding: 20px 40px;
+    align-self: center;
+    font-size: 0.7rem;
+}

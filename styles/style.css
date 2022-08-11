@@ -272,9 +272,10 @@ h4 {
 }
 
 h2 {
-  font-size: 18px;
-  font-size: 0.9rem;
+  font-size: 28px;
+  font-size: 1.4rem;
   text-transform: uppercase;
+  letter-spacing: 1.1px;
 }
 
 h3 {
@@ -285,7 +286,9 @@ h3 {
 .mostPopular p {
   font-size: 14px;
   font-size: 0.7rem;
-  color: #999999;
+  color: #2E2E2E;
+  line-height: 24px;
+  letter-spacing: 0.3px;
 }
 .mostPopular a {
   font-family: "Raleway", sans-serif;
@@ -378,6 +381,17 @@ img {
   text-align: center;
 }
 
+.viewRecipes {
+  display: inline;
+  color: #f6f6f6;
+  background-color: #64A604;
+  text-decoration: none;
+  padding: 20px 40px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-size: 0.7rem;
+}
+
 .navBar,
 .mainMenu,
 .navIcons {
@@ -451,4 +465,68 @@ button {
 .counter p {
   font-size: 0.5rem;
   padding-bottom: 2px;
+}
+
+header {
+  background-image: url(../assets/home-1.jpeg);
+  background-size: cover;
+  height: 110vh;
+}
+
+.recipes .recipePicContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.recipes .mostPopular {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 50%;
+}
+.recipes .mostPopular h2 {
+  margin-bottom: 10px;
+}
+.recipes .mostPopular p {
+  position: relative;
+  width: 70%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 45px 0;
+}
+.recipes .mostPopular p:after {
+  content: "";
+  position: absolute;
+  background: #64A604;
+  width: 60px;
+  height: 4px;
+  top: 0px;
+  right: 46%;
+}
+.recipes .recipeCategories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  background-color: #f6f6f6;
+}
+
+.lettuceBowlContainer,
+.tacoContainer {
+  width: 50%;
 }
