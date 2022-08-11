@@ -530,3 +530,33 @@ header {
 .tacoContainer {
   width: 50%;
 }
+
+.recipe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.recipe h3 {
+  text-transform: uppercase;
+}
+.recipe .recipeIcon {
+  font-size: 30px;
+  font-size: 1.5rem;
+  margin-right: 20px;
+}
+.recipe .recipeText {
+  width: 60%;
+  text-align: left;
+}
+.recipe .recipeText p {
+  font-size: 13px;
+  font-size: 0.65rem;
+  line-height: 24px;
+}
