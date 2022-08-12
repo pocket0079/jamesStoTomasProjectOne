@@ -1,0 +1,42 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+
+    a {
+        width: calc(100%/3);
+
+        & :hover,
+        & :focus {
+            transform: scale(0.9);
+            transition: 0.3s;
+            cursor: pointer;
+        }
+    }
+}
+
+.carousel {
+    background-color: $carouselBackground;
+
+    .hungryContainer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .carouselQuoteContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .carouselText {
+            width: 60%;
+        }
+
+        .quote {
+            color: $white;
+            @include fontSize(50);
+        }
+    }
+}

@@ -22,11 +22,11 @@
             <ul class="mainMenu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Recipes</a></li>
-                <li><a href="#">Nutrition</a></li>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="#nutrition">Nutrition</a></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li>
                     <div class="navIcons">
                         <div class="bagCounter">
@@ -148,7 +148,7 @@
         <!-- end of recipe section -->
 
         <!-- start of our restaurants section -->
-        <section class="restaurantSection">
+        <section class="restaurantSection" id="nutrition">
             <div class="wrapper restaurantSection">
                 <div class="restaurantImgContainer">
                     <div class="restaurantImg">
@@ -165,23 +165,25 @@
         <!-- end of restaurant section -->
 
         <!-- start of gallery section -->
-        <section class="gallery">
-            <div><img src="./assets/home-5.jpeg" alt="Overhead view of a dish with edible flowers, pomegrante seeds, tomato, and other fresh ingredients"></div>
-            <div><img src="./assets/home-6.jpeg" alt="A small slider with a garnish of green onion scattered around it"></div>
-            <div><img src="./assets/home-7.jpeg" alt="Five red onions in a bunch"></div>
-            <div><img src="./assets/home-8.jpeg" alt="A cake with pink icing and decorative flowers on top "></div>
-            <div><img src="./assets/home-9.jpeg" alt="An overhead shot of blueberry cookies beside a bowl of blueberries, flowers, and a cup of coffee "></div>
-            <div><img src="./assets/home-10.jpeg" alt="A yogurt based sauce in a bowl with a spoon"></div>
+        <section class="gallery" id="shop">
+            <a><img src="./assets/home-5.jpeg" alt="Overhead view of a dish with edible flowers, pomegrante seeds, tomato, and other fresh ingredients"></a>
+            <a><img src="./assets/home-6.jpeg" alt="A small slider with a garnish of green onion scattered around it"></a>
+            <a><img src="./assets/home-7.jpeg" alt="Five red onions in a bunch"></a>
+            <a><img src="./assets/home-8.jpeg" alt="A cake with pink icing and decorative flowers on top "></a>
+            <a><img src="./assets/home-9.jpeg" alt="An overhead shot of blueberry cookies beside a bowl of blueberries, flowers, and a cup of coffee "></a>
+            <a><img src="./assets/home-10.jpeg" alt="A yogurt based sauce in a bowl with a spoon"></a>
         </section>
         <!--end of gallery section-->
 
         <!--start of carousel section-->
         <section class="carousel">
-            <div class="wrapper">
+            <div class="wrapper hungryContainer">
                 <h2>Hungry Clients</h2>
-                <i class="fa-solid fa-quote-left"></i>
-                <p class="carouselText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam provident repellendus, quod neque itaque labore debitis ad dicta possimus nostrum sint, fugit vel, pariatur eveniet nesciunt dolores asperiores illum tempora!</p>
-                <i class="fa-solid fa-quote-right"></i>
+                <div class="carouselQuoteContainer">
+                    <i class="fa-solid fa-quote-left quote"></i>
+                    <p class="carouselText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam provident repellendus, quod neque itaque labore debitis ad dicta possimus nostrum sint, fugit vel, pariatur eveniet nesciunt dolores asperiores illum tempora!</p>
+                    <i class="fa-solid fa-quote-right quote"></i>
+                </div>
                 <div class="carouselArrowContainer">
                     <button class="carouselArrow">
                         <i class="fa-solid fa-angle-left"></i>
@@ -199,7 +201,7 @@
         <footer>
             <div class="wrapper">
                 <div class="footerFlexContainer">
-                    <div class="contactInfo">
+                    <div class="contactInfo" id="contact">
                         <a href="#" class="footerHeader"><h4 >Delicious</h4></a>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus exercitationem hic, nisi dolorem cum alias dignissimos quos ipsa!</p>
                         <p>A delicious restaurant <br>Toronto, Ontario</p>
