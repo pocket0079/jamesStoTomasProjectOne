@@ -441,17 +441,6 @@ button {
 }
 
 .counter {
-  position: absolute;
-  right: 17px;
-  top: 12px;
-}
-
-.counter {
-  background-color: #64A604;
-  color: #f6f6f6;
-  border-radius: 50%;
-  width: 17px;
-  height: 17px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -461,6 +450,14 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: absolute;
+  right: 17px;
+  top: 12px;
+  background-color: #64A604;
+  color: #f6f6f6;
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;
 }
 .counter p {
   font-size: 0.5rem;
@@ -559,4 +556,33 @@ header {
   font-size: 13px;
   font-size: 0.65rem;
   line-height: 24px;
+}
+
+.restaurantSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.restaurantImgContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+.restaurantImgContainer .restaurantImg, .restaurantImgContainer .circleTextImg {
+  width: auto;
+  height: auto;
+}
+.restaurantImgContainer .restaurantImg {
+  margin-top: 265px;
+}
+.restaurantImgContainer .circleTextImg {
+  position: absolute;
+  right: 300px;
+  top: 148px;
 }

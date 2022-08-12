@@ -45,21 +45,18 @@ button {
     padding-right: 30px;
 }
 
-.counter {
+.counter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     right: 17px;
     top: 12px;
-}
-
-.counter{
     background-color: $accent;
     color: $white;
     border-radius: 50%;
     width: 17px;
     height: 17px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     p{
         font-size: 0.5rem;

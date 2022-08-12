@@ -1,0 +1,26 @@
+.restaurantSection {
+    display: flex;
+    text-align: center;
+}
+
+.restaurantImgContainer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    & .restaurantImg,
+    & .circleTextImg {
+        width: auto;
+        height: auto;
+    }
+
+    .restaurantImg{
+        margin-top: 265px;
+    }
+    
+    .circleTextImg{
+        position: absolute;
+        right: 300px;
+        top: 148px;
+    }
+}
