@@ -563,6 +563,16 @@ header {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.restaurantSection h2 {
+  letter-spacing: 2.1px;
 }
 
 .restaurantImgContainer {
@@ -579,10 +589,29 @@ header {
   height: auto;
 }
 .restaurantImgContainer .restaurantImg {
-  margin-top: 265px;
+  margin: 265px 0 75px;
 }
 .restaurantImgContainer .circleTextImg {
   position: absolute;
-  right: 300px;
+  right: -78px;
   top: 148px;
+}
+
+.restaurantParagraph {
+  position: relative;
+  text-align: center;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  width: 75%;
+  padding-top: 35px;
+  margin-bottom: 165px;
+}
+.restaurantParagraph::after {
+  content: "";
+  position: absolute;
+  background: #64A604;
+  width: 70px;
+  height: 4px;
+  top: 0px;
+  right: 47%;
 }
