@@ -322,6 +322,7 @@ h3 {
 footer {
   font-size: 13px;
   font-size: 0.65rem;
+  color: #999999;
 }
 footer .contactInfo a {
   text-decoration: none;
@@ -706,4 +707,19 @@ header {
   position: absolute;
   right: 55px;
   bottom: 50px;
+}
+
+footer {
+  background-color: #333333;
+}
+footer .footerFlexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .footerFlexContainer div {
+  width: 33.3333333333%;
 }

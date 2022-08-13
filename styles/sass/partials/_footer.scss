@@ -1,0 +1,12 @@
+footer{
+    background-color: $recipieIcon;
+
+    .footerFlexContainer {
+        display: flex;
+        justify-content: space-between;
+
+        div {
+                width: calc(100%/3);
+            }
+    }
+}

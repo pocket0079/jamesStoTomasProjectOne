@@ -81,6 +81,7 @@ h3{
 
 footer {
     @include fontSize(13);
+    color: $secondary;
 
     .contactInfo {
         a {
