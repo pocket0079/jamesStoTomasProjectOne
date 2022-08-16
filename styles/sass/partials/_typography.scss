@@ -84,6 +84,11 @@ footer {
     color: $secondary;
 
     .contactInfo {
+
+        p{
+            line-height: 25px;
+        }
+
         a {
             text-decoration: none;
             color: $secondary;
@@ -115,6 +120,23 @@ footer {
         h3{
             color: $white;
             text-transform: uppercase;
+        }
+
+        p {
+            width: 60%;
+            line-height: 25px;
+        }
+    }
+
+    .emailContainer {
+        input {
+            color: $secondary;
+            font-family: $secondaryFont;
+            font-style: italic;
+        }
+
+        .emailArrowContainer {
+            color: $white;
         }
     }
 }

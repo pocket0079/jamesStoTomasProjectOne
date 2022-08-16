@@ -203,8 +203,8 @@
                 <div class="footerFlexContainer">
                     <div class="contactInfo" id="contact">
                         <a href="#" class="footerHeader"><h4 >Delicious</h4></a>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus exercitationem hic, nisi dolorem cum alias dignissimos quos ipsa!</p>
-                        <p>A delicious restaurant <br>Toronto, Ontario</p>
+                        <p class="contactParagraph">Soko radicchio bunya nuts gram dusle silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout cabbage.</p>
+                        <p>A delicious restaurant <br> Toronto, Ontario</p>
                         <a href="mailto:yum@food.com">yum@food.com</a>
                         <a href="tel:+1 234 567 8910">+1 234 567 8910</a>
                     </div><!--end contact info-->
@@ -241,11 +241,15 @@
                     <div class="subscribeNowContainer">
                         <h3>Subscribe Now</h3>
                         <p>Get all of our newest recipes immediately in your inbox!</p>
-                        <label for="email" class="sr-only">Enter your email</label>
-
+                        
                         <div class="emailContainer">
+                            <label for="email" class="sr-only">Enter your email</label>
                             <input type="email" id="email" placeholder="Enter your email">
-                            <i class="fa-solid fa-right-long"></i>
+                            <div class="emailArrowContainer">
+                                <button type="submit">
+                                    <i class="fa-solid fa-right-long emailArrow"></i>
+                                </button>
+                            </div>
                         </div>
 
                         <div class="socialContainer">
@@ -256,8 +260,12 @@
                         
                     </div>
                 </div> <!--end of footerFlexContainer-->
-                <p>Copyrights C 2015 <a href="#">Polar.</a> All Rights Reserved.</p>
             </div><!--end of wrapper-->
+            <div class="copyright">
+                <div class="wrapper">
+                    <p class="copyrightText">Copyrights C 2015 <a href="#">Polar.</a> All Rights Reserved.</p>
+                </div>
+            </div>
         </footer>
 </body>
 </html>

@@ -324,6 +324,9 @@ footer {
   font-size: 0.65rem;
   color: #999999;
 }
+footer .contactInfo p {
+  line-height: 25px;
+}
 footer .contactInfo a {
   text-decoration: none;
   color: #999999;
@@ -348,6 +351,19 @@ footer .recentPostContainer h3,
 footer .subscribeNowContainer h3 {
   color: #f6f6f6;
   text-transform: uppercase;
+}
+footer .recentPostContainer p,
+footer .subscribeNowContainer p {
+  width: 60%;
+  line-height: 25px;
+}
+footer .emailContainer input {
+  color: #999999;
+  font-family: "Lora", serif;
+  font-style: italic;
+}
+footer .emailContainer .emailArrowContainer {
+  color: #f6f6f6;
 }
 
 .wrapper {
@@ -470,7 +486,8 @@ button {
 header {
   background-image: url(../assets/home-1.jpeg);
   background-size: cover;
-  height: 110vh;
+  background-position: center;
+  height: 100vh;
 }
 
 .recipes .recipePicContainer {
@@ -719,7 +736,101 @@ footer .footerFlexContainer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 168px 0;
 }
 footer .footerFlexContainer div {
   width: 33.3333333333%;
+}
+footer .footerFlexContainer .contactInfo a,
+footer .footerFlexContainer .contactInfo :nth-child(3) {
+  display: block;
+  width: 60%;
+}
+footer .footerFlexContainer .contactInfo .contactParagraph {
+  width: 60%;
+  padding-bottom: 15px;
+}
+footer .footerFlexContainer .contactInfo :nth-child(n+2) {
+  border-bottom: 1px solid #535353;
+  padding-bottom: 10px;
+}
+footer .footerFlexContainer .contactInfo :nth-child(3) {
+  line-height: 0;
+}
+footer .footerFlexContainer .contactInfo :last-child {
+  border-bottom: 0;
+}
+footer .footerFlexContainer .contactInfo * {
+  margin: 0 0 20px;
+}
+footer .recentPostContainer h3 {
+  margin-bottom: 50px;
+}
+footer .recentPostContainer ul li {
+  width: 63%;
+  border-bottom: 1px solid #535353;
+  margin-bottom: 13px;
+  padding-bottom: 13px;
+}
+footer .recentPostContainer ul :last-child {
+  border: none;
+}
+footer .subscribeNowContainer h3 {
+  margin-bottom: 50px;
+}
+footer .subscribeNowContainer p {
+  margin-bottom: 25px;
+}
+footer .socialContainer {
+  color: #f6f6f6;
+  font-size: 16px;
+  font-size: 0.8rem;
+  border-top: 1px solid #999999;
+  margin-top: 30px;
+}
+footer .socialContainer i {
+  margin: 20px 20px 0 0;
+}
+
+.emailContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.emailContainer input {
+  color: #999999;
+  background-color: #535353;
+  border: none;
+  padding: 15px 40px 15px 15px;
+}
+.emailContainer .emailArrowContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #64A604;
+  margin: 0 auto;
+  padding: 15px 20px;
+}
+
+.copyright {
+  background-color: #2E2E2E;
+}
+.copyright .copyrightText {
+  margin: 0;
+  padding: 18px 0;
+}
+.copyright .copyrightText a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #64A604;
 }
