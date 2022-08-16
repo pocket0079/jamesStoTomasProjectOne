@@ -489,6 +489,12 @@ header {
   background-position: center;
   height: 100vh;
 }
+header.contact {
+  background-image: url(../assets/contact-1.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 65vh;
+}
 
 .recipes .recipePicContainer {
   display: -webkit-box;
@@ -752,10 +758,11 @@ footer .footerFlexContainer .contactInfo .contactParagraph {
 }
 footer .footerFlexContainer .contactInfo :nth-child(n+2) {
   border-bottom: 1px solid #535353;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 footer .footerFlexContainer .contactInfo :nth-child(3) {
-  line-height: 0;
+  line-height: 0.5;
+  padding-bottom: 20px;
 }
 footer .footerFlexContainer .contactInfo :last-child {
   border-bottom: 0;
@@ -787,6 +794,10 @@ footer .socialContainer {
   font-size: 0.8rem;
   border-top: 1px solid #999999;
   margin-top: 30px;
+}
+footer .socialContainer a {
+  text-decoration: none;
+  color: #f6f6f6;
 }
 footer .socialContainer i {
   margin: 20px 20px 0 0;
