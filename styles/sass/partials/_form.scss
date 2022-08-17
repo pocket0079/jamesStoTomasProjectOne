@@ -1,0 +1,36 @@
+.contactContainer {
+    display: flex;
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+
+        h2{
+            margin: 100px 0 60px 0;
+        }
+
+        input {
+            border: none;
+            background-color: $white;
+            padding: 15px 50px 15px 10px;
+        }
+
+        textarea {
+            border: none;
+            background-color: $white;
+        }
+
+        form {
+
+        }
+    }
+
+    .contactDetails {
+        h2{
+            margin-top: 100px;
+        }
+        width: 35%;
+        background-color: $white;
+    }
+}

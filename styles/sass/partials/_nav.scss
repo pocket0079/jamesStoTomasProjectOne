@@ -76,4 +76,11 @@ header {
         background-position: center;
         height: 65vh;
     }
+
+    &.blogPage {
+        background-image: url(../assets/blog-1.jpeg);
+        background-size: cover;
+        background-position: center;
+        height: 70vh;
+    }
 }

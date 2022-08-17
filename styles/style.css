@@ -495,6 +495,47 @@ header.contact {
   background-position: center;
   height: 65vh;
 }
+header.blogPage {
+  background-image: url(../assets/blog-1.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+}
+
+.contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contactContainer .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 65%;
+}
+.contactContainer .form h2 {
+  margin: 100px 0 60px 0;
+}
+.contactContainer .form input {
+  border: none;
+  background-color: #f6f6f6;
+  padding: 15px 50px 15px 10px;
+}
+.contactContainer .form textarea {
+  border: none;
+  background-color: #f6f6f6;
+}
+.contactContainer .contactDetails {
+  width: 35%;
+  background-color: #f6f6f6;
+}
+.contactContainer .contactDetails h2 {
+  margin-top: 100px;
+}
 
 .recipes .recipePicContainer {
   display: -webkit-box;
