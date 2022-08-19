@@ -27,6 +27,7 @@ h4 {
     @include fontSize(18);
     text-transform: uppercase;
     list-style-type: none;
+    font-weight: bold;
     a{
         text-decoration: none;
     }
@@ -39,7 +40,8 @@ h2 {
 }
 
 h3{
-    @include fontSize(18)
+    @include fontSize(18);
+    text-transform: uppercase;
 }
 
 .mostPopular {
@@ -184,13 +186,15 @@ footer {
     }
 }
 
+//author section
+
 .authorContainer {
     .sallyBio {
 
         h3 {
             text-transform: uppercase;
         }
-        p {
+        p{
             @include fontSize(14);
             color: $primary;
             line-height: 27px;
@@ -207,4 +211,35 @@ footer {
             color: $primary;
         }
     }
+}
+
+//comment section - blog page
+
+.commentContainer {
+    @include fontSize(14);
+
+    a,
+    .commentTime{
+        font-family: $headerFont;
+        text-decoration: none;
+        color: inherit;
+        font-weight: bold;
+    }
+
+    .commentTime {
+        @include fontSize(12);
+    }
+}
+
+.userComment {
+    @include fontSize(14);
+    font-family: $secondaryFont;
+    color: $recipieIcon;
+    line-height: 22px;
+}
+
+.commentButton {
+    font-family: $headerFont;
+    font-weight: bold;
+    text-transform: uppercase;
 }

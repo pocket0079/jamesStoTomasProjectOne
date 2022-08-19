@@ -97,6 +97,9 @@
     .postsContainer{
         display: flex;
         justify-content: space-between;
+        border-bottom: 1px solid $white;
+        padding-bottom: 50px;
+        margin-bottom: 50px;
 
         .relatedPost{
             width: 32%;
@@ -112,6 +115,76 @@
             }
         }
     }
-
-
 }
+
+//comments section
+.commentsSection{
+    h3 {
+        margin-bottom: 50px;
+    }
+}
+.commentor {
+    display: flex;
+    margin-bottom: 30px;
+
+    .commentorImg {
+        margin-right: 30px;
+        width: 6%;
+
+        img {
+            width: auto;
+        }
+    }
+
+    .commentContainer {
+        position: relative;
+        background-color: $white;
+        padding: 20px;
+    }
+
+    .userComment {
+        margin-top: 8px;
+    }
+
+    .fa-caret-left {
+        position: absolute;
+        left: -8px;
+        bottom: 95px;
+        color: $white;
+        @include fontSize(30);
+    }
+
+    .commentTime {
+        margin-bottom: 0;
+    }
+}
+
+
+input,
+textarea {
+    display: block;
+    border: 1px solid $white;
+}
+
+.nameEmailSite {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    input {
+        width: 32%;
+        padding: 10px;
+    }
+    
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.commentButton {
+    margin-bottom: 200px;
+}
+
