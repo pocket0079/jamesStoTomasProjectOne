@@ -1,0 +1,92 @@
+.pineappleBlog {
+    margin-bottom: 50px;
+    border-bottom: 1px solid $white;
+
+    :nth-child(6){
+        padding-bottom: 30px;
+        border-bottom: 1px solid $white;
+    }
+    .posted {
+        margin: 0 0 30px;
+    }
+
+    .tagContainer,
+    .shareContainer {
+        display: flex;
+        align-items: flex-end;
+
+        h3 {
+            margin-right: 10px;
+        }
+
+        a {
+            padding-right: 5px;
+        }
+    }
+}
+
+.tagContainer {
+    margin: 30px 0 20px 0;
+}
+
+.shareContainer {
+    margin-bottom: 30px;
+
+    h3 {
+            margin-right: 10px;
+        }
+    
+        i {
+            padding-right: 15px;
+
+            &.fa-facebook-f {
+                &:hover,
+                &:focus {
+                    color: #4267B2;
+                }
+        }
+
+            &.fa-twitter {
+                &:hover,
+                &:focus {
+                    color: #1DA1F2;
+                }
+            }
+    
+            &.fa-instagram {
+                &:hover,
+                &:focus {
+                    color: #C13584;
+                }
+            }
+    }
+}
+
+.authorContainer {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid $white;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+
+    .authorPic {
+        margin-right: 30px;
+
+        img {
+            width: auto;
+        }
+    }
+
+    .sallyBio {
+        h3 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin: 0;
+        }
+        background-color: $white;
+        padding: 35px 20px 10px 35px;
+
+    }
+}
