@@ -90,3 +90,28 @@
 
     }
 }
+
+//related posts
+.relatedPosts {
+
+    .postsContainer{
+        display: flex;
+        justify-content: space-between;
+
+        .relatedPost{
+            width: 32%;
+        }
+
+        .relatedPostPic{
+            margin: 30px 0;
+        }
+
+        .postTextContainer {
+            p {
+                margin: 7px 0;
+            }
+        }
+    }
+
+
+}

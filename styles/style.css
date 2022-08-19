@@ -366,26 +366,43 @@ footer .emailContainer .emailArrowContainer {
   color: #f6f6f6;
 }
 
-.pineappleBlog p {
+.pineappleBlog h3,
+.relatedPosts h3 {
+  text-transform: uppercase;
+}
+.pineappleBlog p,
+.relatedPosts p {
   font-size: 14px;
   font-size: 0.7rem;
   color: #2E2E2E;
   line-height: 24px;
   letter-spacing: 0.3px;
 }
-.pineappleBlog a {
+.pineappleBlog .posted,
+.relatedPosts .posted {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+.pineappleBlog a,
+.relatedPosts a {
   color: inherit;
   text-decoration: none;
 }
-.pineappleBlog a:hover, .pineappleBlog a:focus {
+.pineappleBlog a:hover, .pineappleBlog a:focus,
+.relatedPosts a:hover,
+.relatedPosts a:focus {
   text-decoration: underline;
 }
 .pineappleBlog .tagContainer h3,
-.pineappleBlog .shareContainer h3 {
+.pineappleBlog .shareContainer h3,
+.relatedPosts .tagContainer h3,
+.relatedPosts .shareContainer h3 {
   text-transform: uppercase;
 }
 .pineappleBlog .tagContainer a,
-.pineappleBlog .shareContainer a {
+.pineappleBlog .shareContainer a,
+.relatedPosts .tagContainer a,
+.relatedPosts .shareContainer a {
   font-size: 14px;
   font-size: 0.7rem;
   color: #999999;
@@ -400,6 +417,12 @@ footer .emailContainer .emailArrowContainer {
   color: #2E2E2E;
   line-height: 27px;
   letter-spacing: 0.3px;
+}
+
+.postTextContainer p a {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: #2E2E2E;
 }
 
 .wrapper {
@@ -536,6 +559,7 @@ header.blogPage {
   background-size: cover;
   background-position: center;
   height: 70vh;
+  margin-bottom: 200px;
 }
 
 .contactContainer {
@@ -652,6 +676,24 @@ header.blogPage {
 }
 .authorContainer .sallyBio p {
   margin: 0;
+}
+
+.relatedPosts .postsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.relatedPosts .postsContainer .relatedPost {
+  width: 32%;
+}
+.relatedPosts .postsContainer .relatedPostPic {
+  margin: 30px 0;
+}
+.relatedPosts .postsContainer .postTextContainer p {
+  margin: 7px 0;
 }
 
 .recipes .recipePicContainer {
