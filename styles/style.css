@@ -364,7 +364,7 @@ footer .emailContainer input {
   font-family: "Lora", serif;
   font-style: italic;
 }
-footer .emailContainer .emailArrowContainer {
+footer .emailContainer .emailArrow {
   color: #f6f6f6;
 }
 
@@ -427,6 +427,18 @@ footer .emailContainer .emailArrowContainer {
   color: #2E2E2E;
 }
 
+.commentsSection p,
+.commentsSection input,
+.commentsSection textarea {
+  font-family: "Lora", serif;
+  color: #999999;
+  font-size: 14px;
+  font-size: 0.7rem;
+}
+.commentsSection p {
+  font-style: italic;
+}
+
 .commentContainer {
   font-size: 14px;
   font-size: 0.7rem;
@@ -451,7 +463,8 @@ footer .emailContainer .emailArrowContainer {
   line-height: 22px;
 }
 
-.commentButton {
+.commentButton,
+.viewRecipes {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
@@ -501,6 +514,14 @@ img {
   -ms-flex-item-align: center;
       align-self: center;
   font-size: 0.7rem;
+}
+.viewRecipes:hover, .viewRecipes:focus,
+.commentButton:hover,
+.commentButton:focus {
+  background-color: #535353;
+  color: #64A604;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .navBar,
@@ -790,12 +811,13 @@ textarea {
 }
 .nameEmailSite input {
   width: 32%;
-  padding: 10px;
+  padding: 15px;
 }
 
 textarea {
   width: 100%;
   margin-bottom: 20px;
+  padding: 15px;
 }
 
 .commentButton {
@@ -806,7 +828,7 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: auto;
 }
 .recipes .mostPopular {
   display: -webkit-box;
@@ -871,6 +893,15 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.recipe a {
+  text-decoration: none;
+  color: inherit;
+}
+.recipe a:hover, .recipe a:focus {
+  color: #64A604;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .recipe h3 {
   text-transform: uppercase;
@@ -1051,7 +1082,7 @@ footer .footerFlexContainer {
   padding: 168px 0;
 }
 footer .footerFlexContainer div {
-  width: 33.3333333333%;
+  width: 66%;
 }
 footer .footerFlexContainer .contactInfo a,
 footer .footerFlexContainer .contactInfo :nth-child(3) {
@@ -1095,6 +1126,7 @@ footer .subscribeNowContainer p {
   margin-bottom: 25px;
 }
 footer .socialContainer {
+  width: 100%;
   color: #f6f6f6;
   font-size: 16px;
   font-size: 0.8rem;
@@ -1107,6 +1139,15 @@ footer .socialContainer a {
 }
 footer .socialContainer i {
   margin: 20px 20px 0 0;
+}
+footer .socialContainer i.fa-facebook-f:hover, footer .socialContainer i.fa-facebook-f:focus {
+  color: #4267B2;
+}
+footer .socialContainer i.fa-twitter:hover, footer .socialContainer i.fa-twitter:focus {
+  color: #1DA1F2;
+}
+footer .socialContainer i.fa-instagram:hover, footer .socialContainer i.fa-instagram:focus {
+  color: #C13584;
 }
 
 .emailContainer {

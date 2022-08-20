@@ -41,4 +41,11 @@ img {
     padding: 20px 40px;
     align-self: center;
     font-size: 0.7rem;
+
+    &:hover,
+    &:focus {
+        background-color: $footerEmail;
+        color: $accent;
+        transition: 0.3s;
+    }
 }

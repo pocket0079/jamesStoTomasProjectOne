@@ -2,7 +2,7 @@
 
     .recipePicContainer{
         display: flex;
-        width: 100%;
+        width: auto;
     }
 
     .mostPopular {
@@ -52,6 +52,17 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+
+        &:hover,
+        &:focus {
+            color: $accent;
+            transition: 0.3s;
+        }
+    }
 
     h3 {
         text-transform: uppercase;
