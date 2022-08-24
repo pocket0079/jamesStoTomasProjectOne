@@ -256,3 +256,61 @@ footer {
     font-weight: bold;
     text-transform: uppercase;
 }
+
+//contact page//
+
+.formName,
+.formEmail,
+.formSubject,
+.message{
+    font-family: $secondaryFont;
+    @include fontSize(14);
+    color: $footerEmail;
+}
+
+.contactButton {
+    @include fontSize(14);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $accent;
+}
+
+.detailParagraph,
+.time,
+.hoursWeekend,
+.contactInfo>p,
+.contactInfo>a {
+    font-family: $secondaryFont;
+    @include fontSize(14);
+    color: $secondary;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+}
+
+.detailParagraph,
+.time {
+    color: $footerEmail;
+    width: 75%;
+}
+
+.days {
+    font-family: $headerFont;
+    @include fontSize(14);
+    text-transform: uppercase;
+}
+
+.hoursWeekend{
+    font-style: italic;
+}
+
+.contactInfo {
+    margin-bottom: 100px;
+    a {
+        display: block;
+        text-decoration: none;
+    }
+
+    :nth-child(3){
+        margin: 30px 0 20px;
+    }
+}

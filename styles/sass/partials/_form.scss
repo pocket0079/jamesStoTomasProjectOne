@@ -5,6 +5,7 @@
         display: flex;
         flex-direction: column;
         width: 65%;
+        margin-right: 50px;
 
         h2{
             margin: 100px 0 60px 0;
@@ -22,15 +23,71 @@
         }
 
         form {
+            .nameEmail {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-bottom: 20px;
 
+                .formName, 
+                .formEmail {
+                    width: 48%;
+                }
+
+                .formSubjectContainer{
+                    width: 100%;
+                }
+            }
         }
     }
 
     .contactDetails {
+        background-color: $white;
+        padding-left: 20px;
+        
         h2{
-            margin-top: 100px;
+            margin: 100px 0 50px;
         }
         width: 35%;
-        background-color: $white;
+    }
+
+    .details {
+        margin-bottom: 100px;
+    }
+
+    .hours {
+        margin-bottom: 70px;
+
+        h3 {
+            margin-bottom: 15px;
+        }
+
+        .hoursWeekend {
+            margin: 0;
+        }
+    }
+
+    .days,
+    .time {
+        display: inline;
     }
 }
+
+.formSubject {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contactButton {
+    &:hover,
+    &:focus {
+        background-color: $accent;
+        color: $white;
+        transition: 0.3s;
+        padding: 25px;
+    }
+}
+
+// .mainContent {
+//     background: linear-gradient(to right, white 60%, $white 50%);
+// }

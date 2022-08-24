@@ -470,6 +470,65 @@ footer .emailContainer .emailArrow {
   text-transform: uppercase;
 }
 
+.formName,
+.formEmail,
+.formSubject,
+.message {
+  font-family: "Lora", serif;
+  font-size: 14px;
+  font-size: 0.7rem;
+  color: #535353;
+}
+
+.contactButton {
+  font-size: 14px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #64A604;
+}
+
+.detailParagraph,
+.time,
+.hoursWeekend,
+.contactInfo > p,
+.contactInfo > a {
+  font-family: "Lora", serif;
+  font-size: 14px;
+  font-size: 0.7rem;
+  color: #999999;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+}
+
+.detailParagraph,
+.time {
+  color: #535353;
+  width: 75%;
+}
+
+.days {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.hoursWeekend {
+  font-style: italic;
+}
+
+.contactInfo {
+  margin-bottom: 100px;
+}
+.contactInfo a {
+  display: block;
+  text-decoration: none;
+}
+.contactInfo :nth-child(3) {
+  margin: 30px 0 20px;
+}
+
 .wrapper {
   max-width: 1280px;
   width: 90%;
@@ -630,6 +689,7 @@ header.blogPage {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 65%;
+  margin-right: 50px;
 }
 .contactContainer .form h2 {
   margin: 100px 0 60px 0;
@@ -643,12 +703,62 @@ header.blogPage {
   border: none;
   background-color: #f6f6f6;
 }
+.contactContainer .form form .nameEmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+.contactContainer .form form .nameEmail .formName,
+.contactContainer .form form .nameEmail .formEmail {
+  width: 48%;
+}
+.contactContainer .form form .nameEmail .formSubjectContainer {
+  width: 100%;
+}
 .contactContainer .contactDetails {
-  width: 35%;
   background-color: #f6f6f6;
+  padding-left: 20px;
+  width: 35%;
 }
 .contactContainer .contactDetails h2 {
-  margin-top: 100px;
+  margin: 100px 0 50px;
+}
+.contactContainer .details {
+  margin-bottom: 100px;
+}
+.contactContainer .hours {
+  margin-bottom: 70px;
+}
+.contactContainer .hours h3 {
+  margin-bottom: 15px;
+}
+.contactContainer .hours .hoursWeekend {
+  margin: 0;
+}
+.contactContainer .days,
+.contactContainer .time {
+  display: inline;
+}
+
+.formSubject {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contactButton:hover, .contactButton:focus {
+  background-color: #64A604;
+  color: #f6f6f6;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 25px;
 }
 
 .pineappleBlog {
