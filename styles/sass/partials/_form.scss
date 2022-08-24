@@ -4,8 +4,9 @@
     .form {
         display: flex;
         flex-direction: column;
-        width: 65%;
+        width: 60%;
         margin-right: 50px;
+        padding-left: 310px;
 
         h2{
             margin: 100px 0 60px 0;
@@ -43,12 +44,16 @@
 
     .contactDetails {
         background-color: $white;
-        padding-left: 20px;
+        width: 40%;
+        padding-left: 30px;
         
         h2{
             margin: 100px 0 50px;
         }
-        width: 35%;
+
+        .detailParagraph {
+            width: 60%;
+        }
     }
 
     .details {

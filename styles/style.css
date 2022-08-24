@@ -688,8 +688,9 @@ header.blogPage {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 65%;
+  width: 60%;
   margin-right: 50px;
+  padding-left: 310px;
 }
 .contactContainer .form h2 {
   margin: 100px 0 60px 0;
@@ -725,11 +726,14 @@ header.blogPage {
 }
 .contactContainer .contactDetails {
   background-color: #f6f6f6;
-  padding-left: 20px;
-  width: 35%;
+  width: 40%;
+  padding-left: 30px;
 }
 .contactContainer .contactDetails h2 {
   margin: 100px 0 50px;
+}
+.contactContainer .contactDetails .detailParagraph {
+  width: 60%;
 }
 .contactContainer .details {
   margin-bottom: 100px;
@@ -1302,3 +1306,7 @@ footer .socialContainer i.fa-instagram:hover, footer .socialContainer i.fa-insta
   text-transform: uppercase;
   color: #64A604;
 }
+
+/* Portrait tablet and small desktops */
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
