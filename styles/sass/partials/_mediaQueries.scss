@@ -10,5 +10,146 @@
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+    header {
+        height: 50vh;
+    }
+
+    .recipePicContainer {
+        flex-direction: column;
+    }
+
+    .recipes{
+        .mostPopular {
+            width: 90%;
+            margin-bottom: 50px;
     
-}
+            h2 {
+                margin-top: 50px;
+            }
+    
+            p {
+                width: auto;
+
+                &::after {
+                    right: 43%;
+                }
+            }
+        }
+        .lettuceBowlContainer,
+        .tacoContainer {
+            width: 100%;
+        }
+
+        .recipeCategories {
+            padding: 50px 0;
+            width: 100%;
+            flex-direction: column;
+
+            ul>li {
+                margin-bottom: 30px;
+            }
+        }
+    }
+      //end of recipes
+
+    .restaurantImgContainer{
+        .restaurantImg {
+            margin: 100px 0 75px;
+        }
+
+        .circleTextImg {
+            width: 40%;
+            right: 1px;
+            top: 30px;
+        }
+    }
+
+    .restaurantParagraph {
+        width: auto;
+
+        &::after {
+            right: 42%;
+        }
+    }
+    //end of restaurant section
+    
+    .gallery {
+        a {
+            width: 50%;
+        }
+    }
+    
+    .carousel{
+        .carouselQuoteContainer{
+            .leftQuote {
+                left: 0;
+                top: 50px;
+            }
+            
+            .rightQuote {
+                right: 6px;
+                bottom: -15px;
+            }
+        }
+    }
+    //end of gallery
+
+    footer{
+        .footerFlexContainer {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 100px 0;
+    
+            .contactInfo {
+                margin: 0;
+                text-align: center;
+
+                .footerHeader {
+                    margin-bottom: 40px;
+                }
+
+                .contactParagraph {
+                    width: 100%;
+                }
+            
+                    a{
+                        width: 100%;
+                    }
+
+                :nth-child(3){
+                    width: 100%;
+                }
+            }
+
+            .recentPostContainer {
+                margin-bottom: 20px;
+
+                ul {
+                    li {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .subscribeNowContainer {
+                p{
+                    width: 100%;
+                }
+
+                .socialContainer {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    
+                    a {
+                        @include fontSize(24);
+                    }
+                }
+            }
+        } //end of footerFlexContainer
+
+    }
+    
+} 

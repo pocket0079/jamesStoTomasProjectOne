@@ -23,11 +23,19 @@ h4 {
     text-transform: uppercase;
 }
 
+.navBar {
+        a {
+                text-decoration: none;
+                color: inherit;
+            }
+}
+
 .mainMenu{
     @include fontSize(18);
     text-transform: uppercase;
     list-style-type: none;
     font-weight: bold;
+
     a{
         text-decoration: none;
     }

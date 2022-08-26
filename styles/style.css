@@ -261,6 +261,11 @@ h4 {
   text-transform: uppercase;
 }
 
+.navBar a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .mainMenu {
   font-size: 18px;
   font-size: 0.9rem;
@@ -1172,12 +1177,12 @@ textarea {
   font-size: 50px;
   font-size: 2.5rem;
 }
-.carousel .carouselQuoteContainer .fa-quote-left {
+.carousel .carouselQuoteContainer .leftQuote {
   position: absolute;
   left: 60px;
   top: 70px;
 }
-.carousel .carouselQuoteContainer .fa-quote-right {
+.carousel .carouselQuoteContainer .rightQuote {
   position: absolute;
   right: 55px;
   bottom: 50px;
@@ -1310,3 +1315,119 @@ footer .socialContainer i.fa-instagram:hover, footer .socialContainer i.fa-insta
 /* Portrait tablet and small desktops */
 /* Landscape phone to portrait tablet */
 /* Landscape phones and down */
+@media (max-width: 480px) {
+  header {
+    height: 50vh;
+  }
+  .recipePicContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .recipes .mostPopular {
+    width: 90%;
+    margin-bottom: 50px;
+  }
+  .recipes .mostPopular h2 {
+    margin-top: 50px;
+  }
+  .recipes .mostPopular p {
+    width: auto;
+  }
+  .recipes .mostPopular p::after {
+    right: 43%;
+  }
+  .recipes .lettuceBowlContainer,
+.recipes .tacoContainer {
+    width: 100%;
+  }
+  .recipes .recipeCategories {
+    padding: 50px 0;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .recipes .recipeCategories ul > li {
+    margin-bottom: 30px;
+  }
+  .restaurantImgContainer .restaurantImg {
+    margin: 100px 0 75px;
+  }
+  .restaurantImgContainer .circleTextImg {
+    width: 40%;
+    right: 1px;
+    top: 30px;
+  }
+  .restaurantParagraph {
+    width: auto;
+  }
+  .restaurantParagraph::after {
+    right: 42%;
+  }
+  .gallery a {
+    width: 50%;
+  }
+  .carousel .carouselQuoteContainer .leftQuote {
+    left: 0;
+    top: 50px;
+  }
+  .carousel .carouselQuoteContainer .rightQuote {
+    right: 6px;
+    bottom: -15px;
+  }
+  footer .footerFlexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 100px 0;
+  }
+  footer .footerFlexContainer .contactInfo {
+    margin: 0;
+    text-align: center;
+  }
+  footer .footerFlexContainer .contactInfo .footerHeader {
+    margin-bottom: 40px;
+  }
+  footer .footerFlexContainer .contactInfo .contactParagraph {
+    width: 100%;
+  }
+  footer .footerFlexContainer .contactInfo a {
+    width: 100%;
+  }
+  footer .footerFlexContainer .contactInfo :nth-child(3) {
+    width: 100%;
+  }
+  footer .footerFlexContainer .recentPostContainer {
+    margin-bottom: 20px;
+  }
+  footer .footerFlexContainer .recentPostContainer ul li {
+    width: 100%;
+  }
+  footer .footerFlexContainer .subscribeNowContainer p {
+    width: 100%;
+  }
+  footer .footerFlexContainer .subscribeNowContainer .socialContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  footer .footerFlexContainer .subscribeNowContainer .socialContainer a {
+    font-size: 24px;
+    font-size: 1.2rem;
+  }
+}

@@ -68,13 +68,13 @@
             @include fontSize(50);
         }
 
-        .fa-quote-left {
+        .leftQuote{
             position: absolute;
             left: 60px;
             top: 70px;
         }
 
-        .fa-quote-right {
+        .rightQuote {
             position: absolute;
             right: 55px;
             bottom: 50px;
