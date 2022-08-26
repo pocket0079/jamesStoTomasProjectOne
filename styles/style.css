@@ -1319,6 +1319,9 @@ footer .socialContainer i.fa-instagram:hover, footer .socialContainer i.fa-insta
   header {
     height: 50vh;
   }
+  header.contact {
+    height: 50vh;
+  }
   .recipePicContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1445,6 +1448,50 @@ footer .socialContainer i.fa-instagram:hover, footer .socialContainer i.fa-insta
   }
   footer .copyright {
     text-align: center;
+  }
+  .contactContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactContainer .form {
+    width: 90%;
+    padding: 0;
+    margin: 0 auto 100px;
+  }
+  .contactContainer .form form .nameEmail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 0;
+  }
+  .contactContainer .form form .nameEmail .formName,
+.contactContainer .form form .nameEmail .formEmail {
+    width: 100%;
+  }
+  .contactContainer .form form .nameEmail input {
+    margin-bottom: 20px;
+  }
+  .contactContainer .contactDetails {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .contactContainer .contactDetails .detailParagraph {
+    width: 90%;
+  }
+  .contactContainer .contactDetails .details {
+    margin-bottom: 50px;
+  }
+  .contactContainer .contactDetails .details h2 {
+    margin: 40px 0;
+  }
+  .contactContainer .contactDetails .hours {
+    margin-bottom: 50px;
+  }
+  .contactContainer .contactDetails .contactInfo :nth-child(3) {
+    margin: 10px 0;
   }
 }
 /*Smallest device */

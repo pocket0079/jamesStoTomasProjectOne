@@ -12,6 +12,10 @@
 @media (max-width: 480px) {
     header {
         height: 50vh;
+
+        &.contact {
+            height: 50vh;
+        }
     }
 
     .recipePicContainer {
@@ -172,8 +176,64 @@
         }
     }//end of footer
 
-    
-} 
+    //---------end of index.html-----------//
+
+    //--------contact.html---------//
+    .contactContainer {
+        flex-direction: column;
+
+        .form{
+            width: 90%;
+            padding: 0;
+            margin: 0 auto 100px;
+            
+            form {
+                .nameEmail {
+                    flex-direction: column;
+                    margin-bottom: 0;
+
+                    .formName,
+                    .formEmail {
+                        width: 100%;
+                    }
+
+                    input {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+
+        }
+
+        .contactDetails {
+            width: 100%;
+            margin: 0 auto;
+
+            .detailParagraph {
+                width: 90%;
+            }
+
+            .details {
+                margin-bottom: 50px;
+                h2 {
+                    margin: 40px 0;
+                }
+            }
+
+            .hours {
+                margin-bottom: 50px;
+            }
+
+            .contactInfo {
+                :nth-child(3) {
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+
+
+} // end of 480px 
 
 /*Smallest device */
 @media (max-width: 320px) {
@@ -230,4 +290,4 @@
             }
         }
     }
-}
+} //end of 320px
