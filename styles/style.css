@@ -1392,6 +1392,9 @@ footer .socialContainer i.fa-instagram:hover, footer .socialContainer i.fa-insta
     text-align: center;
     padding: 100px 0;
   }
+  footer .footerFlexContainer div {
+    width: auto;
+  }
   footer .footerFlexContainer .contactInfo {
     margin: 0;
     text-align: center;
@@ -1417,17 +1420,69 @@ footer .socialContainer i.fa-instagram:hover, footer .socialContainer i.fa-insta
   footer .footerFlexContainer .subscribeNowContainer p {
     width: 100%;
   }
+  footer .footerFlexContainer .subscribeNowContainer .emailContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .footerFlexContainer .subscribeNowContainer .emailContainer .emailArrowContainer {
+    margin: 0;
+  }
   footer .footerFlexContainer .subscribeNowContainer .socialContainer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: 100%;
+  }
+  footer .footerFlexContainer .subscribeNowContainer .socialContainer i {
+    margin-right: 0;
   }
   footer .footerFlexContainer .subscribeNowContainer .socialContainer a {
     font-size: 24px;
     font-size: 1.2rem;
+  }
+  footer .copyright {
+    text-align: center;
+  }
+}
+/*Smallest device */
+@media (max-width: 320px) {
+  .recipes .mostPopular {
+    width: 90%;
+    margin-bottom: 50px;
+  }
+  .recipes .mostPopular h2 {
+    margin-top: 50px;
+  }
+  .recipes .mostPopular p {
+    width: auto;
+  }
+  .recipes .mostPopular p::after {
+    right: 39%;
+  }
+  .restaurantParagraph {
+    width: auto;
+  }
+  .restaurantParagraph::after {
+    right: 38%;
+  }
+  .gallery a {
+    width: 100%;
+  }
+  .carousel .hungryContainer {
+    padding: 75px 0 75px;
+  }
+  .carousel .carouselQuoteContainer .carouselText {
+    font-size: 20px;
+    font-size: 1rem;
+  }
+  .carousel .carouselQuoteContainer .carouselText::after {
+    right: 37%;
+  }
+  .carousel .carouselQuoteContainer .quote {
+    font-size: 30px;
+    font-size: 1.5rem;
   }
 }
