@@ -897,7 +897,7 @@ header.blogPage {
 .commentor .userComment {
   margin-top: 8px;
 }
-.commentor .fa-caret-left {
+.commentor .commentCarat {
   position: absolute;
   left: -8px;
   bottom: 95px;
@@ -1492,6 +1492,64 @@ footer .socialContainer i.fa-instagram:hover, footer .socialContainer i.fa-insta
   }
   .contactContainer .contactDetails .contactInfo :nth-child(3) {
     margin: 10px 0;
+  }
+  header.blogPage {
+    height: 50vh;
+    margin-bottom: 50px;
+  }
+  .authorContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .authorContainer .authorPic {
+    margin-bottom: 30px;
+  }
+  .authorContainer .sallyBio {
+    padding: 30px;
+  }
+  .authorContainer .sallyBio h3 {
+    text-align: center;
+  }
+  .authorContainer .sallyBio p {
+    text-align: center;
+  }
+  .relatedPosts .postsContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .relatedPosts .postsContainer .relatedPost {
+    width: 100%;
+  }
+  .commentor .commentorImg {
+    width: auto;
+  }
+  .commentor .commentCarat {
+    bottom: 162px;
+  }
+  .commentTwo {
+    margin-bottom: 50px;
+  }
+  .commentsSection p {
+    font-size: 13px;
+    font-size: 0.65rem;
+  }
+  .nameEmailSite {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 0;
+  }
+  .nameEmailSite input {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
 /*Smallest device */

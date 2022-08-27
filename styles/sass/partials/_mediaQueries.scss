@@ -231,6 +231,77 @@
             }
         }
     }
+    //------end of contact.html-----//
+
+    //------------blog.html----------//
+
+    header {
+        &.blogPage {
+            height: 50vh;
+            margin-bottom: 50px;
+        }
+    }
+
+    .authorContainer {
+        flex-direction: column;
+        align-items: center;
+
+        .authorPic {
+            margin-bottom: 30px;
+        }
+
+        .sallyBio {
+            padding: 30px;
+
+            h3 {
+                text-align: center;
+
+            }
+            p {
+                text-align: center;
+            }
+        }
+    }
+
+    .relatedPosts {
+        .postsContainer {
+            flex-direction: column;
+
+            .relatedPost {
+                width: 100%;
+            }
+        }
+    }
+
+    .commentor {
+        .commentorImg {
+            width: auto;
+        }
+
+        .commentCarat {
+            bottom: 162px;
+        }
+    }
+
+    .commentTwo {
+        margin-bottom: 50px;
+    }
+
+    .commentsSection{
+        p {
+            @include fontSize(13);
+        }
+    }
+
+    .nameEmailSite {
+        flex-direction: column;
+        margin-bottom: 0;
+
+        input {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
 
 
 } // end of 480px 
