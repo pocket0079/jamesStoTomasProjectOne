@@ -49,3 +49,25 @@ img {
         transition: 0.3s;
     }
 }
+
+.backToTop {
+    background-color: $footerEmail;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    bottom: -50px;
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 1s;
+
+    .backUp {
+            color: $white;
+    }
+}
+
+.popUp {
+    bottom: 0px;
+    color: $white;
+    opacity: 1;
+    transform: translate(0, 0);
+}

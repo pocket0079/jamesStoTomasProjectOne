@@ -588,6 +588,30 @@ img {
   transition: 0.3s;
 }
 
+.backToTop {
+  background-color: #535353;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  bottom: -50px;
+  opacity: 0;
+  -webkit-transform: translate(0, 10vh);
+          transform: translate(0, 10vh);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+.backToTop .backUp {
+  color: #f6f6f6;
+}
+
+.popUp {
+  bottom: 0px;
+  color: #f6f6f6;
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
 .navBar,
 .mainMenu,
 .navIcons {
@@ -680,7 +704,8 @@ header.blogPage {
   margin-bottom: 200px;
 }
 
-.mobileNavIcon {
+.mobileNavIcon,
+.mobileNavSearch {
   display: none;
 }
 
@@ -1374,8 +1399,11 @@ footer .socialContainer i.fa-instagram:hover, footer .socialContainer i.fa-insta
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .mobileNavIcon {
-    display: block;
+  .mobileNavIcon,
+.mobileNavSearch {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .navIcons {
     -webkit-box-align: center;
@@ -1443,6 +1471,9 @@ footer .socialContainer i.fa-instagram:hover, footer .socialContainer i.fa-insta
   .carousel .carouselQuoteContainer .rightQuote {
     right: 6px;
     bottom: -15px;
+  }
+  .carousel .carouselQuoteContainer .carouselText::after {
+    right: 40%;
   }
   footer .footerFlexContainer {
     -webkit-box-orient: vertical;

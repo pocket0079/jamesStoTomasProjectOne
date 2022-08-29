@@ -36,8 +36,9 @@
         }
     }
 
-    .mobileNavIcon {
-        display: block;
+    .mobileNavIcon,
+    .mobileNavSearch {
+        display: flex;
     }
 
     .navIcons {
@@ -123,6 +124,12 @@
             .rightQuote {
                 right: 6px;
                 bottom: -15px;
+            }
+
+            .carouselText {
+                &::after {
+                    right: 40%
+                }
             }
         }
     }
