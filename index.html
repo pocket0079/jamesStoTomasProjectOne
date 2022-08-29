@@ -19,8 +19,48 @@
 <header>
     <section class="navBar">
         <a href="#"><h1>Delicious</h1></a>
-        <nav>
-            <ul class="mainMenu">
+
+        <div class="navIcons">
+
+            <button class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <div class="bagCounter">
+                <button class="bag">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+        
+                <div class="counter">
+                    <p class="smallCopy">2</p>
+                </div>
+            </div>
+
+            <button class="mobileNavIcon" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <div class="slideOutNav">
+            <nav>
+                <ul class="mainMenu mobileNav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#recipes">Recipes</a></li>
+                    <li><a href="#nutrition">Nutrition</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+                    <button id="menuClose">
+                        <i class="fa-solid fa-x"></i>
+                    </button>
+            </nav>
+        </div>
+        </div> <!--end of mobile nav-->
+        
+        <nav> <!--desktop and tablet nav-->
+            <ul class="mainMenu desktopNav">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#recipes">Recipes</a></li>
@@ -74,7 +114,7 @@
                     <img src="./assets/home-3.jpeg" alt="A taco stuffed with steak and pepper on top, with a slice of lime on the side">
                 </div>
 
-                <div class="recipeCategories wrapper">
+                <div class="recipeCategories wrapper" id="nutrition">
                     <ul>
                         <li class="recipe">
                             <div class="recipeIcon">
@@ -161,7 +201,7 @@
         <!-- end of recipe section -->
 
         <!-- start of our restaurants section -->
-        <section class="restaurantSection" id="nutrition">
+        <section class="restaurantSection" id="about">
             <div class="wrapper restaurantSection">
                 <div class="restaurantImgContainer">
                     <div class="restaurantImg">

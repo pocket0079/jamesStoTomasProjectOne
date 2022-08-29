@@ -16,6 +16,36 @@
         &.contact {
             height: 50vh;
         }
+
+    }
+
+    .desktopNav {
+        display: none;
+    }
+
+    .mobileNav,
+    .slideOutNav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slideOutNav {
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .mobileNavIcon {
+        display: block;
+    }
+
+    .navIcons {
+        align-items: center;
+    }
+
+    .search {
+        padding-right: 26px;
     }
 
     .recipePicContainer {

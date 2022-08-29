@@ -680,6 +680,37 @@ header.blogPage {
   margin-bottom: 200px;
 }
 
+.mobileNavIcon {
+  display: none;
+}
+
+.slideOutNav {
+  background-color: #f6f6f6;
+  color: #64A604;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  padding: 30px 50px;
+  width: 50%;
+  max-width: 450px;
+  font-weight: bold;
+  display: none;
+  z-index: 20;
+  right: -450px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.slideOutNav.open {
+  right: 0;
+}
+.slideOutNav button {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.slideOutNav a {
+  line-height: 2.2rem;
+}
+
 .contactContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1321,6 +1352,38 @@ footer .socialContainer i.fa-instagram:hover, footer .socialContainer i.fa-insta
   }
   header.contact {
     height: 50vh;
+  }
+  .desktopNav {
+    display: none;
+  }
+  .mobileNav,
+.slideOutNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .slideOutNav nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .mobileNavIcon {
+    display: block;
+  }
+  .navIcons {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .search {
+    padding-right: 26px;
   }
   .recipePicContainer {
     -webkit-box-orient: vertical;

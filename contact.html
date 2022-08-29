@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Raleway:wght@700&display=swap"
             rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="./script.js"></script>
     <title>Contact</title>
 </head>
 <body>
@@ -17,38 +18,83 @@
 <a href="#mainContent" class="skipLink">Skip to the main content.</a>
 
 <header class="contact">
-    <section class="navBar">
-        <h1>Delicious</h1>
-        <nav>
-            <ul class="mainMenu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#recipes">Recipes</a></li>
-                <li><a href="#nutrition">Nutrition</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="#shop">Shop</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-                <li>
-                    <div class="navIcons">
-                        <div class="bagCounter">
-                            <button class="bag">
-                                <i class="fa-solid fa-bag-shopping"></i>
-                            </button>
-
-                            <div class="counter">
-                                <p class="smallCopy">2</p>
-                            </div>
-
-                        </div>
-
-                        <button class="search">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
+        <section class="navBar">
+            <a href="#">
+                <h1>Delicious</h1>
+            </a>
+        
+            <div class="navIcons">
+            
+                <button class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            
+                <div class="bagCounter">
+                    <button class="bag">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </button>
+                
+                    <div class="counter">
+                        <p class="smallCopy">2</p>
                     </div>
-                </li>
-            </ul>
-        </nav>
-    </section>
+                </div>
+            
+                <button class="mobileNavIcon" id="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        
+            <div class="slideOutNav">
+                <nav>
+                    <ul class="mainMenu mobileNav">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./index.html#about">About</a></li>
+                        <li><a href="./index.html#recipes">Recipes</a></li>
+                        <li><a href="./index.html#nutrition">Nutrition</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./index.html#shop">Shop</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                    <button id="menuClose">
+                        <i class="fa-solid fa-x"></i>
+                    </button>
+                </nav>
+            </div>
+            </div>
+            <!--end of mobile nav-->
+        
+            <nav>
+                <!--desktop and tablet nav-->
+                <ul class="mainMenu desktopNav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#recipes">Recipes</a></li>
+                    <li><a href="#nutrition">Nutrition</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li>
+                        <div class="navIcons">
+                            <div class="bagCounter">
+                                <button class="bag">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                </button>
+                            
+                                <div class="counter">
+                                    <p class="smallCopy">2</p>
+                                </div>
+                            
+                            </div>
+                        
+                            <button class="search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </li>
+                
+                </ul>
+            </nav>
+        </section>
 </header>
 
 <section class="mainContent">

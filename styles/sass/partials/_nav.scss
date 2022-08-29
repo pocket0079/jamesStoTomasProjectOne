@@ -85,3 +85,35 @@ header {
         margin-bottom: 200px;
     }
 }
+
+.mobileNavIcon {
+    display: none;
+}
+
+.slideOutNav {
+    background-color: $white;
+    color: $accent;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    padding: 30px 50px;
+    width: 50%;
+    max-width: 450px;
+    font-weight: bold;
+    display: none;
+    z-index: 20;
+    right: -450px;
+    transition: 0.3s;
+
+    &.open {
+        right: 0;
+    }
+
+    button {
+        align-self: flex-start;
+    }
+
+    a {
+        line-height: 2.2rem;
+    }
+}
