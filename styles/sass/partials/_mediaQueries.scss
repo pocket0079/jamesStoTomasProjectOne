@@ -107,6 +107,19 @@
     //---------end of blog.html----------//
 
     //---------contact.html------------//
+    .contactContainer {
+        .form {
+            padding-left: 50px;
+
+            form {
+                .nameEmail {
+                    .formName {
+                        width: 49%;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* Landscape phone to portrait tablet */

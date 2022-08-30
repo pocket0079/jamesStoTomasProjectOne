@@ -1449,6 +1449,12 @@ h4 {
   .commentTwo {
     margin-bottom: 50px;
   }
+  .contactContainer .form {
+    padding-left: 50px;
+  }
+  .contactContainer .form form .nameEmail .formName {
+    width: 49%;
+  }
 }
 /* Landscape phone to portrait tablet */
 /* Landscape phones and down */
