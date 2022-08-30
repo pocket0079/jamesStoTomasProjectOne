@@ -605,9 +605,10 @@ img {
 }
 
 .popUp {
-  bottom: 0px;
+  text-transform: uppercase;
   color: #f6f6f6;
   opacity: 1;
+  bottom: 0px;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
 }
@@ -622,12 +623,18 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navBar {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 30px;
 }
 .navBar h1 {
@@ -1368,7 +1375,81 @@ footer .socialContainer i.fa-instagram:hover, footer .socialContainer i.fa-insta
   color: #64A604;
 }
 
+@media (max-width: 1280px) {
+  h1 {
+    font-size: 44px;
+    font-size: 2.2rem;
+  }
+  .mainMenu {
+    font-size: 16px;
+    font-size: 0.8rem;
+  }
+}
 /* Portrait tablet and small desktops */
+@media (max-width: 1024px) {
+  h1,
+h4 {
+    font-size: 30px;
+    font-size: 1.5rem;
+  }
+  .mainMenu {
+    font-size: 14px;
+    font-size: 0.7rem;
+  }
+  h2 {
+    font-size: 24px;
+    font-size: 1.2rem;
+  }
+  .recipes .mostPopular p {
+    padding: 25px 0;
+  }
+  .recipes .mostPopular p::after {
+    right: 42%;
+  }
+  .recipe .recipeIcon {
+    font-size: 18px;
+    font-size: 0.9rem;
+    margin-right: 12px;
+  }
+  .recipe .recipeText {
+    width: 80%;
+    font-size: 10px;
+    font-size: 0.5rem;
+  }
+  .recipe .recipeText p {
+    margin: 7px 0;
+  }
+  h3 {
+    font-size: 14px;
+    font-size: 0.7rem;
+  }
+  .restaurantParagraph::after {
+    right: 45%;
+  }
+  .carousel .carouselQuoteContainer .carouselText {
+    font-size: 20px;
+    font-size: 1rem;
+  }
+  .carousel .carouselQuoteContainer .leftQuote {
+    left: 20px;
+  }
+  .carousel .carouselQuoteContainer .rightQuote {
+    right: 20px;
+    bottom: 40px;
+  }
+  .carousel .carouselQuoteContainer .carouselText::after {
+    right: 45%;
+  }
+  footer .footerFlexContainer {
+    padding: 100px 0 0 0;
+  }
+  header.blogPage {
+    margin-bottom: 70px;
+  }
+  .commentTwo {
+    margin-bottom: 50px;
+  }
+}
 /* Landscape phone to portrait tablet */
 /* Landscape phones and down */
 @media (max-width: 480px) {
@@ -1660,6 +1741,9 @@ footer .socialContainer i.fa-instagram:hover, footer .socialContainer i.fa-insta
   }
   .recipes .mostPopular p::after {
     right: 39%;
+  }
+  .recipe .recipeIcon {
+    margin-left: 10px;
   }
   .restaurantParagraph {
     width: auto;

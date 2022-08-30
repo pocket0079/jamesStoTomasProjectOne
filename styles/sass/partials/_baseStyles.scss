@@ -66,8 +66,9 @@ img {
 }
 
 .popUp {
-    bottom: 0px;
+    text-transform: uppercase;
     color: $white;
     opacity: 1;
+    bottom: 0px;
     transform: translate(0, 0);
 }

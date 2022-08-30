@@ -1,6 +1,112 @@
+@media (max-width: 1280px) {
+    h1 {
+            @include fontSize(44);
+        }
+    
+        .mainMenu {
+            @include fontSize(16);
+        }
+}
+
 /* Portrait tablet and small desktops */
 @media (max-width: 1024px) {
+    h1,
+    h4 {
+        @include fontSize(30);
+    }
 
+    .mainMenu {
+        @include fontSize(14);
+    }
+
+    h2 {
+        @include fontSize(24);
+    }
+
+    .recipes {
+        .mostPopular {
+            p {
+                padding: 25px 0;
+
+                &::after {
+                    right: 42%;
+                }
+            }
+        }
+    }
+
+    .recipe {
+        .recipeIcon {
+            @include fontSize(18);
+            margin-right: 12px;
+        }
+
+        .recipeText {
+            width: 80%;
+            @include fontSize(10);
+
+            p {
+                margin: 7px 0;
+            }
+        }
+    }
+
+    h3 {
+        @include fontSize(14);
+    }
+
+    .restaurantParagraph {
+        &::after {
+            right: 45%;
+        }
+    }
+
+    .carousel {
+        .carouselQuoteContainer {
+
+            .carouselText{
+                @include fontSize(20);
+            }
+            .leftQuote {
+                left: 20px;
+            }
+
+            .rightQuote {
+                right: 20px;
+                bottom: 40px;
+            }
+            
+            .carouselText {
+                &::after {
+                    right: 45%;
+                }
+            }
+        }
+    }
+
+    footer {
+        .footerFlexContainer {
+            padding: 100px 0 0 0;
+        }
+    }
+
+    //-------end of index.html-----------//
+
+    //----------blog.html-------------//
+
+    header{
+        &.blogPage {
+            margin-bottom: 70px;
+        }
+    }
+
+    .commentTwo {
+        margin-bottom: 50px;
+    }
+    
+    //---------end of blog.html----------//
+
+    //---------contact.html------------//
 }
 
 /* Landscape phone to portrait tablet */
@@ -362,6 +468,12 @@
                     right: 39%;
                 }
             }
+        }
+    }
+
+    .recipe{
+        .recipeIcon{
+            margin-left: 10px;
         }
     }
 

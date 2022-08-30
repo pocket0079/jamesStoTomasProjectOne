@@ -3,10 +3,12 @@
 .navIcons {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .navBar {
     justify-content: space-between;
+    align-items: center;
     padding-top: 30px;
 
     h1 {
