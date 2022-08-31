@@ -84,15 +84,13 @@
 }
 
 .contactButton {
+    padding: 20px;
+    background-color: transparent;
+
     &:hover,
     &:focus {
         background-color: $accent;
         color: $white;
         transition: 0.3s;
-        padding: 25px;
     }
 }
-
-// .mainContent {
-//     background: linear-gradient(to right, white 60%, $white 50%);
-// }

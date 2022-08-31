@@ -723,10 +723,13 @@ header.blogPage {
   position: fixed;
   top: 0;
   padding: 30px 50px;
-  width: 50%;
+  width: 60%;
   max-width: 450px;
   font-weight: bold;
   display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 20;
   right: -450px;
   -webkit-transition: 0.3s;
@@ -738,6 +741,9 @@ header.blogPage {
 .slideOutNav button {
   -ms-flex-item-align: start;
       align-self: flex-start;
+}
+.slideOutNav .menuClose {
+  padding-right: 30px;
 }
 .slideOutNav a {
   line-height: 2.2rem;
@@ -825,12 +831,15 @@ header.blogPage {
   margin-bottom: 20px;
 }
 
+.contactButton {
+  padding: 20px;
+  background-color: transparent;
+}
 .contactButton:hover, .contactButton:focus {
   background-color: #64A604;
   color: #f6f6f6;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  padding: 25px;
 }
 
 .pineappleBlog {
@@ -1423,6 +1432,14 @@ h4 {
     font-size: 14px;
     font-size: 0.7rem;
   }
+  .restaurantImgContainer .restaurantImg {
+    margin-top: 160px;
+  }
+  .restaurantImgContainer .circleTextImg {
+    width: 35%;
+    right: -72px;
+    top: 59px;
+  }
   .restaurantParagraph::after {
     right: 45%;
   }
@@ -1457,14 +1474,254 @@ h4 {
   }
 }
 /* Landscape phone to portrait tablet */
-/* Landscape phones and down */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   header {
     height: 50vh;
   }
-  header.contact {
+  header.contact, header.blogPage {
     height: 50vh;
   }
+  .desktopNav {
+    display: none;
+  }
+  .mobileNav,
+.slideOutNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .slideOutNav nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .mobileNavIcon,
+.mobileNavSearch {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navIcons {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .search {
+    padding-right: 26px;
+  }
+  .recipePicContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .recipes .mostPopular {
+    width: 90%;
+    margin-bottom: 50px;
+  }
+  .recipes .mostPopular h2 {
+    margin-top: 50px;
+  }
+  .recipes .mostPopular p {
+    width: auto;
+  }
+  .recipes .mostPopular p::after {
+    right: 46%;
+  }
+  .recipes .lettuceBowlContainer,
+.recipes .tacoContainer {
+    width: 50%;
+  }
+  .recipes .recipeCategories {
+    padding: 50px 0 20px;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .recipes .recipeCategories ul > li {
+    margin-bottom: 30px;
+  }
+  .restaurantImgContainer .restaurantImg {
+    margin-top: 100px;
+  }
+  .restaurantImgContainer .circleTextImg {
+    width: 28%;
+    right: -60px;
+    top: 20px;
+  }
+  .restaurantParagraph {
+    margin-bottom: 90px;
+  }
+  .restaurantParagraph::after {
+    right: 44%;
+  }
+  .circleTextImg {
+    width: 28%;
+    right: -60px;
+    top: 20px;
+  }
+  .carousel .hungryContainer {
+    padding: 70px 0;
+  }
+  .carousel .hungryContainer .carouselQuoteContainer .rightQuote {
+    right: 47px;
+  }
+  .carousel .hungryContainer .carouselArrowContainer {
+    margin-top: 45px;
+  }
+  footer .footerFlexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 50px 100px;
+  }
+  footer .footerFlexContainer div {
+    width: auto;
+  }
+  footer .footerFlexContainer .contactInfo {
+    margin: 0;
+    text-align: center;
+  }
+  footer .footerFlexContainer .contactInfo .footerHeader {
+    margin-bottom: 40px;
+  }
+  footer .footerFlexContainer .contactInfo .contactParagraph {
+    width: 100%;
+  }
+  footer .footerFlexContainer .contactInfo a {
+    width: 100%;
+  }
+  footer .footerFlexContainer .contactInfo :nth-child(3) {
+    width: 100%;
+  }
+  footer .footerFlexContainer .recentPostContainer {
+    margin-bottom: 20px;
+  }
+  footer .footerFlexContainer .recentPostContainer ul li {
+    width: 100%;
+  }
+  footer .footerFlexContainer .subscribeNowContainer p {
+    width: 100%;
+  }
+  footer .footerFlexContainer .subscribeNowContainer .emailContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .footerFlexContainer .subscribeNowContainer .emailContainer .emailArrowContainer {
+    margin: 0;
+  }
+  footer .footerFlexContainer .subscribeNowContainer .socialContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+  }
+  footer .footerFlexContainer .subscribeNowContainer .socialContainer i {
+    margin-right: 0;
+  }
+  footer .copyright {
+    text-align: center;
+  }
+  .authorContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .authorContainer .authorPic {
+    margin-bottom: 30px;
+  }
+  .authorContainer .sallyBio {
+    padding: 30px;
+  }
+  .authorContainer .sallyBio h3 {
+    text-align: center;
+  }
+  .authorContainer .sallyBio p {
+    text-align: center;
+  }
+  .commentor .commentorImg {
+    width: 15%;
+  }
+  .commentor .commentCarat {
+    bottom: 110px;
+  }
+  .contactContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactContainer .form {
+    width: 90%;
+    padding: 0;
+    margin: 0 auto 40px;
+  }
+  .contactContainer .form h2 {
+    margin: 45px 0;
+  }
+  .contactContainer .form form .nameEmail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 0;
+  }
+  .contactContainer .form form .nameEmail .formName,
+.contactContainer .form form .nameEmail .formEmail {
+    width: 100%;
+  }
+  .contactContainer .form form .nameEmail input {
+    margin-bottom: 20px;
+  }
+  .contactContainer .contactDetails {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .contactContainer .contactDetails .detailParagraph {
+    width: 90%;
+  }
+  .contactContainer .contactDetails .details {
+    margin-bottom: 50px;
+  }
+  .contactContainer .contactDetails .details h2 {
+    margin: 40px 0;
+  }
+  .contactContainer .contactDetails .hours {
+    margin-bottom: 50px;
+  }
+  .contactContainer .contactDetails .contactInfo {
+    margin-bottom: 45px;
+  }
+  .contactContainer .contactDetails .contactInfo :nth-child(3) {
+    margin: 10px 0;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
   .desktopNav {
     display: none;
   }
@@ -1524,7 +1781,7 @@ h4 {
     width: 100%;
   }
   .recipes .recipeCategories {
-    padding: 50px 0;
+    padding: 50px 0 20px;
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1538,12 +1795,12 @@ h4 {
     margin: 100px 0 75px;
   }
   .restaurantImgContainer .circleTextImg {
-    width: 40%;
-    right: 1px;
-    top: 30px;
+    right: 0px;
+    top: 29px;
   }
   .restaurantParagraph {
     width: auto;
+    margin-bottom: 85px;
   }
   .restaurantParagraph::after {
     right: 42%;
@@ -1551,153 +1808,26 @@ h4 {
   .gallery a {
     width: 50%;
   }
+  .carousel .hungryContainer {
+    padding: 80px 0 60px;
+  }
   .carousel .carouselQuoteContainer .leftQuote {
     left: 0;
     top: 50px;
   }
   .carousel .carouselQuoteContainer .rightQuote {
-    right: 6px;
+    right: 29px;
     bottom: -15px;
   }
   .carousel .carouselQuoteContainer .carouselText::after {
     right: 40%;
   }
-  footer .footerFlexContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    padding: 100px 0;
-  }
-  footer .footerFlexContainer div {
-    width: auto;
-  }
-  footer .footerFlexContainer .contactInfo {
-    margin: 0;
-    text-align: center;
-  }
-  footer .footerFlexContainer .contactInfo .footerHeader {
-    margin-bottom: 40px;
-  }
-  footer .footerFlexContainer .contactInfo .contactParagraph {
-    width: 100%;
-  }
-  footer .footerFlexContainer .contactInfo a {
-    width: 100%;
-  }
-  footer .footerFlexContainer .contactInfo :nth-child(3) {
-    width: 100%;
-  }
-  footer .footerFlexContainer .recentPostContainer {
-    margin-bottom: 20px;
-  }
-  footer .footerFlexContainer .recentPostContainer ul li {
-    width: 100%;
-  }
-  footer .footerFlexContainer .subscribeNowContainer p {
-    width: 100%;
-  }
-  footer .footerFlexContainer .subscribeNowContainer .emailContainer {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  footer .footerFlexContainer .subscribeNowContainer .emailContainer .emailArrowContainer {
-    margin: 0;
-  }
-  footer .footerFlexContainer .subscribeNowContainer .socialContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    width: 100%;
-  }
-  footer .footerFlexContainer .subscribeNowContainer .socialContainer i {
-    margin-right: 0;
-  }
-  footer .footerFlexContainer .subscribeNowContainer .socialContainer a {
-    font-size: 24px;
-    font-size: 1.2rem;
-  }
-  footer .copyright {
-    text-align: center;
-  }
-  .contactContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .contactContainer .form {
-    width: 90%;
-    padding: 0;
-    margin: 0 auto 100px;
-  }
-  .contactContainer .form form .nameEmail {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-bottom: 0;
-  }
-  .contactContainer .form form .nameEmail .formName,
-.contactContainer .form form .nameEmail .formEmail {
-    width: 100%;
-  }
-  .contactContainer .form form .nameEmail input {
-    margin-bottom: 20px;
-  }
-  .contactContainer .contactDetails {
-    width: 100%;
-    margin: 0 auto;
-  }
-  .contactContainer .contactDetails .detailParagraph {
-    width: 90%;
-  }
-  .contactContainer .contactDetails .details {
+  .contactInfo {
     margin-bottom: 50px;
-  }
-  .contactContainer .contactDetails .details h2 {
-    margin: 40px 0;
-  }
-  .contactContainer .contactDetails .hours {
-    margin-bottom: 50px;
-  }
-  .contactContainer .contactDetails .contactInfo :nth-child(3) {
-    margin: 10px 0;
   }
   header.blogPage {
     height: 50vh;
     margin-bottom: 50px;
-  }
-  .authorContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .authorContainer .authorPic {
-    margin-bottom: 30px;
-  }
-  .authorContainer .sallyBio {
-    padding: 30px;
-  }
-  .authorContainer .sallyBio h3 {
-    text-align: center;
-  }
-  .authorContainer .sallyBio p {
-    text-align: center;
   }
   .relatedPosts .postsContainer {
     -webkit-box-orient: vertical;
@@ -1732,9 +1862,18 @@ h4 {
     width: 100%;
     margin-bottom: 20px;
   }
+  footer .footerFlexContainer {
+    padding: 60px 0;
+  }
 }
 /*Smallest device */
 @media (max-width: 320px) {
+  .search {
+    padding-right: 7px;
+  }
+  .mobileNavIcon {
+    margin-left: -16px;
+  }
   .recipes .mostPopular {
     width: 90%;
     margin-bottom: 50px;
@@ -1757,11 +1896,16 @@ h4 {
   .restaurantParagraph::after {
     right: 38%;
   }
+  .restaurantImgContainer .circleTextImg {
+    width: 40%;
+    right: -10px;
+    top: 38px;
+  }
   .gallery a {
     width: 100%;
   }
   .carousel .hungryContainer {
-    padding: 75px 0 75px;
+    padding: 50px 0 45px;
   }
   .carousel .carouselQuoteContainer .carouselText {
     font-size: 20px;
@@ -1773,5 +1917,21 @@ h4 {
   .carousel .carouselQuoteContainer .quote {
     font-size: 30px;
     font-size: 1.5rem;
+  }
+  .carousel .carouselQuoteContainer .rightQuote {
+    right: 16px;
+    bottom: 11px;
+  }
+  .carousel .carouselQuoteContainer .leftQuote {
+    top: 66px;
+  }
+  .commentor .commentCarat {
+    bottom: 300px;
+  }
+  .commentsSection h3 {
+    margin-bottom: 25px;
+  }
+  .commentButton {
+    margin-bottom: 70px;
   }
 }

@@ -93,6 +93,7 @@ header {
     display: none;
 }
 
+//used code from codealong in module 1
 .slideOutNav {
     background-color: $white;
     color: $accent;
@@ -100,10 +101,11 @@ header {
     position: fixed;
     top: 0;
     padding: 30px 50px;
-    width: 50%;
+    width: 60%;
     max-width: 450px;
     font-weight: bold;
     display: none;
+    align-items: center;
     z-index: 20;
     right: -450px;
     transition: 0.3s;
@@ -114,6 +116,10 @@ header {
 
     button {
         align-self: flex-start;
+    }
+
+    .menuClose {
+        padding-right: 30px;
     }
 
     a {
