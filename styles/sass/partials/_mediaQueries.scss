@@ -6,6 +6,12 @@
         .mainMenu {
             @include fontSize(16);
         }
+
+        .contactContainer {
+            .form {
+                padding-left: 65px;
+            }
+        }
 }
 
 /* Portrait tablet and small desktops */
@@ -160,6 +166,8 @@
         }
     
         .slideOutNav {
+            width: 50%;
+
             nav {
                 display: flex;
                 justify-content: space-between;
@@ -173,6 +181,8 @@
     
         .navIcons {
             align-items: center;
+            margin-left: auto;
+            padding-right: 30px;
         }
     
         .search {
@@ -181,6 +191,7 @@
 
     .recipePicContainer {
         flex-direction: column;
+        align-items: center;
     }
 
     .recipes{
@@ -202,7 +213,11 @@
         }
         .lettuceBowlContainer,
         .tacoContainer {
-            width: 50%;
+            width: 70%;
+        }
+
+        .lettuceBowlContainer {
+            margin-bottom: 30px;
         }
 
         .recipeCategories {
@@ -425,7 +440,7 @@
     
         .contactInfo {
             margin-bottom: 45px;
-            
+
             :nth-child(3) {
                 margin: 10px 0;
             }
@@ -492,6 +507,10 @@
         .lettuceBowlContainer,
         .tacoContainer {
             width: 100%;
+        }
+
+        .lettuceBowlContainer {
+            margin-bottom: 0;
         }
 
         .recipeCategories {
@@ -682,6 +701,12 @@
         .hungryContainer {
             padding: 50px 0 45px;
 
+            .carouselQuoteContainer {
+                .rightQuote{
+                right: 13px;
+                bottom: 11px;
+                }
+            }
         }
 
         .carouselQuoteContainer{
@@ -695,11 +720,6 @@
 
             .quote {
                 @include fontSize(30);
-            }
-
-            .rightQuote{
-                right: 16px;
-                bottom: 11px;
             }
 
             .leftQuote {

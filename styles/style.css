@@ -640,6 +640,9 @@ img {
 .navBar h1 {
   padding-left: 30px;
 }
+.navBar .navIcons {
+  color: #2E2E2E;
+}
 
 .mainMenu li {
   padding-right: 30px;
@@ -743,7 +746,8 @@ header.blogPage {
       align-self: flex-start;
 }
 .slideOutNav .menuClose {
-  padding-right: 30px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 .slideOutNav a {
   line-height: 2.2rem;
@@ -1393,6 +1397,9 @@ footer .socialContainer i.fa-instagram:hover, footer .socialContainer i.fa-insta
     font-size: 16px;
     font-size: 0.8rem;
   }
+  .contactContainer .form {
+    padding-left: 65px;
+  }
 }
 /* Portrait tablet and small desktops */
 @media (max-width: 1024px) {
@@ -1494,6 +1501,9 @@ h4 {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .slideOutNav {
+    width: 50%;
+  }
   .slideOutNav nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1512,6 +1522,8 @@ h4 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-left: auto;
+    padding-right: 30px;
   }
   .search {
     padding-right: 26px;
@@ -1521,6 +1533,9 @@ h4 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .recipes .mostPopular {
     width: 90%;
@@ -1537,7 +1552,10 @@ h4 {
   }
   .recipes .lettuceBowlContainer,
 .recipes .tacoContainer {
-    width: 50%;
+    width: 70%;
+  }
+  .recipes .lettuceBowlContainer {
+    margin-bottom: 30px;
   }
   .recipes .recipeCategories {
     padding: 50px 0 20px;
@@ -1780,6 +1798,9 @@ h4 {
 .recipes .tacoContainer {
     width: 100%;
   }
+  .recipes .lettuceBowlContainer {
+    margin-bottom: 0;
+  }
   .recipes .recipeCategories {
     padding: 50px 0 20px;
     width: 100%;
@@ -1907,6 +1928,10 @@ h4 {
   .carousel .hungryContainer {
     padding: 50px 0 45px;
   }
+  .carousel .hungryContainer .carouselQuoteContainer .rightQuote {
+    right: 13px;
+    bottom: 11px;
+  }
   .carousel .carouselQuoteContainer .carouselText {
     font-size: 20px;
     font-size: 1rem;
@@ -1917,10 +1942,6 @@ h4 {
   .carousel .carouselQuoteContainer .quote {
     font-size: 30px;
     font-size: 1.5rem;
-  }
-  .carousel .carouselQuoteContainer .rightQuote {
-    right: 16px;
-    bottom: 11px;
   }
   .carousel .carouselQuoteContainer .leftQuote {
     top: 66px;
