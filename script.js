@@ -31,6 +31,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     })
 
+
+    //back to top button
     window.onscroll = function () { takeMeBack() };
 
     function takeMeBack() {
@@ -45,4 +47,24 @@ document.addEventListener("DOMContentLoaded", () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     })
 
-})
+    
+    //quote carousel
+    //target arrow and listen for click event
+    const forwardArrow = document.querySelector('.fa-angle-right');
+
+    const backArrow = document.querySelector('.fa-angle-left');
+
+    const nextQuote = forwardArrow.addEventListener('click', function (event) {
+        console.log(event);
+    });
+
+    const prevQuote = backArrow.addEventListener('click', function (event) {
+        console.log(event);
+    });
+});
+
+
+
+
+
+//after click take current slide and transition to next slide
