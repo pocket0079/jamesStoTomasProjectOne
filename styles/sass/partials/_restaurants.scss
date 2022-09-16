@@ -72,3 +72,8 @@
 .dot:focus {
     background-color: $footerEmail;
 }
+
+.carouselListItem {
+    display: flex;
+    justify-content: center;
+}

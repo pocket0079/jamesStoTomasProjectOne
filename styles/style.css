@@ -1197,6 +1197,15 @@ textarea {
   background-color: #535353;
 }
 
+.carouselListItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .gallery {
   display: -webkit-box;
   display: -ms-flexbox;

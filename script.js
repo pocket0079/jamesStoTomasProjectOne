@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const header = document.querySelector('.top');
     const closeMenu = menu.classList.contains('open')
 
+
+    //hamburgerMenu-------------------//
     hamburgerButton.addEventListener('click', (e) => {
         menu.classList.add('open');
 
@@ -32,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
 
-    //back to top button
+    //back to top button-----------------------//
     window.onscroll = function () { takeMeBack() };
 
     function takeMeBack() {
@@ -48,23 +50,31 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
     
-    //quote carousel
+    //quote carousel-------------------------//
     //target arrow and listen for click event
     const forwardArrow = document.querySelector('.fa-angle-right');
 
     const backArrow = document.querySelector('.fa-angle-left');
 
-    const nextQuote = forwardArrow.addEventListener('click', function (event) {
+    forwardArrow.addEventListener('click', function (event) {
         console.log(event);
     });
 
     const prevQuote = backArrow.addEventListener('click', function (event) {
         console.log(event);
     });
+
+    //contact form required fields-----------------------------//
+
+    // const submitButton = document.querySelector('.contactButton')
+    // submitButton.addEventListener('click', function(){
+    //     console.log('hi');
+    // })
 });
 
-
-
-
-
+const submitButton = document.getElementsByClassName('contactButton');
+console.log(submitButton)
+submitButton.addEventListener('click', function () {
+    console.log('hi');
+});
 //after click take current slide and transition to next slide
