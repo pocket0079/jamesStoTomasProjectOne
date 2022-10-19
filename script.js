@@ -52,29 +52,35 @@ document.addEventListener("DOMContentLoaded", () => {
     
     //quote carousel-------------------------//
     //target arrow and listen for click event
-    const forwardArrow = document.querySelector('.fa-angle-right');
+    // const forwardArrow = document.querySelector('.fa-angle-right');
 
-    const backArrow = document.querySelector('.fa-angle-left');
+    // const backArrow = document.querySelector('.fa-angle-left');
 
-    forwardArrow.addEventListener('click', function (event) {
-        console.log(event);
-    });
+    // forwardArrow.addEventListener('click', function (event) {
+    //     console.log(event);
+    // });
 
-    const prevQuote = backArrow.addEventListener('click', function (event) {
-        console.log(event);
-    });
+    // const prevQuote = backArrow.addEventListener('click', function (event) {
+    //     console.log(event);
+    // });
 
     //contact form required fields-----------------------------//
 
-    // const submitButton = document.querySelector('.contactButton')
-    // submitButton.addEventListener('click', function(){
-    //     console.log('hi');
-    // })
-});
+    const submitButton = document.querySelector('.contactButton');
+    const formName = document.getElementById('name');
+    const formEmail = document.getElementById('email');
+    const formSubject = document.getElementById('subject');
+    const formMessage = document.getElementById('message');
+    console.log(formName.value)
 
-const submitButton = document.getElementsByClassName('contactButton');
-console.log(submitButton)
-submitButton.addEventListener('click', function () {
-    console.log('hi');
+    submitButton.addEventListener('click', function(event){
+        event.preventDefault();
+        if (formName.value && formEmail.value && formSubject.value && formMessage.value != '') {
+            alert('Thank you! We will be in touch!')
+            
+        } else {
+            alert('Please fill out required fields')
+            
+        }
+    })
 });
-//after click take current slide and transition to next slide
